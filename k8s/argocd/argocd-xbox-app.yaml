@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: xbox-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: xbox
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/raisreis/playground-argocd-app-deployment.git
+    path: k8s/argocd
+    targetRevision: main
