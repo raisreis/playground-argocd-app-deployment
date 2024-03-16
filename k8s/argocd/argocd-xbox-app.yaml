@@ -12,3 +12,5 @@ spec:
     repoURL: https://github.com/raisreis/playground-argocd-app-deployment.git
     path: k8s/argocd
     targetRevision: main
+  syncPolicy:
+    automated: {}

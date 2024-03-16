@@ -24,7 +24,7 @@ spec:
         name: xbox
         env:
         - name: COLOR
-#          value: "blue" # old
-          value: "pink"  # new
+#          value: "pink" # old
+          value: "brown"  # new
         resources: {}
 ---
